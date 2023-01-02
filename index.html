@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Books Booking System</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="fonts/css/all.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#bars').click(function(){
+        $('.nav-menu').toggleClass('show');
+      });
+    });
+  </script>
+</head>
+<body>
+<nav>
+  <div class="logo-section">
+    <img src="images/logo.png" alt="logo image">
+    <a href="index.html"><p>Books<span> Booking System</span></p></a>
+  </div>
+  <div class="search-menu">
+    <input id="search" type="search" name="search" placeholder="Find a book...">
+    <a  href="#"><i id="search-icon" class="fa-solid fa-magnifying-glass"></i></a>
+  </div>
+  <div class="menu-section">
+    <ul class="nav-menu">
+      <a href="#"><li class="menu-item active">Home</li></a>
+      <a href="#"><li class="menu-item">Books</li></a>
+      <a href="#"><li class="menu-item">Order a book</li></a>
+      <a href="#"><li class="menu-item">Account</li></a>
+    </ul>
+    <ul class="nav-menu-mobile">
+      <a href="#">
+        <li class="menu-item"><i class="fa-solid fa-house"></i></li>
+        <p>Home</p>
+      </a>
+      <a href="#">
+        <li class="menu-item"><i class="fa-solid fa-book"></i></li>
+        <p>Books</p>
+      </a>
+      <a href="#">
+        <li class="menu-item"><i class="fa-solid fa-shop"></i></li>
+        <p>Order</p>
+      </a>
+      <a href="#">
+        <li class="menu-item"><i class="fa-solid fa-user"></i></li>
+        <p>Account</p>
+      </a>
+    </ul>
+  </div>
+  <div class="login-section">
+    <a href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
+    <span>︱</span>
+    <a href="#"><i class="fa-solid fa-user-plus"></i></a>
+    <label id="bars">
+      <i class="fas fa-bars"></i>
+
+    </label>
+  </div>
+
+</nav>
+
+</body>
+</html>
